@@ -25,4 +25,6 @@ RUN addgroup -g 1001 -S nodejs && \
 USER nodejs
 
 EXPOSE 3000
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
+
+CMD ["yarn", "db:migrate"]
